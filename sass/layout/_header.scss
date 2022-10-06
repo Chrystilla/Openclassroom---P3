@@ -1,0 +1,10 @@
+.header {
+    padding :20px;
+    box-shadow: 0px 0px 10px rgb(179, 179, 179);
+    position: relative; /*pour pouvoir voir l'ombre*/
+
+    &__logo {
+        text-align: center;
+        margin: 0;
+    }
+}
