@@ -1,0 +1,56 @@
+.container-menu {
+    background-color: $secondary-background-color;
+    border-radius: 30px 30px 0px 0px;
+    padding: 30px 30px 10px 30px;
+    margin-top:-60px;
+    position: relative;
+}
+
+.container{
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu {
+    &__header {
+        text-transform: uppercase;
+        padding: 20px 0px 20px 0px;
+        position: relative;
+        ::after {
+            content: "";
+            width: 50px;
+            height: 4px;
+            background-color: #99e2d0;
+            position: absolute;
+            left: 0px;
+            bottom: 10px;
+        }
+    }
+    &__item {
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-end;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0px 0px 15px #0000002e;
+        cursor: pointer;
+    }
+    &__text, &__title, &__desc {
+        white-space: nowrap; /*Met tout le texte sur une même ligne*/
+        overflow: hidden; /*Cache le texte qui depasse*/
+        text-overflow: ellipsis; /*Rajoute "..." */
+    }
+    &__price {
+        margin-left: 10px;
+    }
+    &__command {
+        text-align: center;
+        margin: 50px;
+    }
+ 
+}

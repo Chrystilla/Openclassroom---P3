@@ -8,3 +8,16 @@
         margin: 0;
     }
 }
+
+.header--withbackarrow {
+    &__icon {
+        font-size: 30px;
+        color: black;
+        transform: translatey(38px);
+    }
+    &__img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+    }
+}
