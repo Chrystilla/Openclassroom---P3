@@ -244,6 +244,22 @@ H2 {
 .card__footer h3 {
   padding-bottom: 5Px;
 }
+.card__icon {
+  position: relative;
+  cursor: pointer;
+}
+.card__icon--empty {
+  position: absolute;
+  right: 20px;
+}
+.card__icon--full {
+  position: absolute;
+  right: 20px;
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-fill-color: transparent;
+  background-color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
 
 /*ADAPTATION HOME PAGE SUR DESKTOP*/
 @media all and (min-width: 1024px) {
