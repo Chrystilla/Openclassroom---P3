@@ -37,7 +37,7 @@
         align-items:flex-end;
         padding: 10px;
         margin-bottom: 10px;
-        box-shadow: 0px 0px 15px #0000002e;
+        box-shadow: $card-shadow;
         cursor: pointer;
     }
     &__text, &__title, &__desc {
