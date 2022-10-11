@@ -11,8 +11,18 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .fa-heart {
+        position: absolute;
+        cursor: pointer;
+        right: 40px;
+        font-size: 30px;
+        }
+        .fa-solid  {
+        @include anim-heart
+        }
     }
 }
+
 
 .menu {
     &__header {
@@ -39,7 +49,14 @@
         margin-bottom: 10px;
         box-shadow: $card-shadow;
         cursor: pointer;
+        animation-name: itemsappear;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+        animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+
+        
     }
+    
     &__text, &__title, &__desc {
         white-space: nowrap; /*Met tout le texte sur une même ligne*/
         overflow: hidden; /*Cache le texte qui depasse*/

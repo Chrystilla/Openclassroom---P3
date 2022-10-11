@@ -1,6 +1,27 @@
 @charset "UTF-8";
-/*IMPORT POLICE Shrikhand & Roboto*/
+/*Apparition du menu*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+@-webkit-keyframes itemsappear {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes itemsappear {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*IMPORT POLICE Shrikhand & Roboto*/
 /*INTEGRATION POLICE */
 * {
   font-family: Roboto, Arial, "Arial black", sans-serif;
@@ -244,21 +265,27 @@ H2 {
 .card__footer h3 {
   padding-bottom: 5Px;
 }
-.card__icon {
-  position: relative;
+.card .fa-heart {
+  position: absolute;
   cursor: pointer;
-}
-.card__icon--empty {
-  position: absolute;
   right: 20px;
+  font-size: 30px;
 }
-.card__icon--full {
-  position: absolute;
-  right: 20px;
+.card .fa-solid {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background-image: -o-linear-gradient(top left, #FF79DA, #9356DC);
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   -webkit-background-clip: text;
-          background-clip: text;
-  text-fill-color: transparent;
-  background-color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
+}
+.card .fa-solid:hover {
+  opacity: 1;
 }
 
 /*ADAPTATION HOME PAGE SUR DESKTOP*/
@@ -306,6 +333,28 @@ H2 {
       -ms-flex-align: center;
           align-items: center;
 }
+.container__header .fa-heart {
+  position: absolute;
+  cursor: pointer;
+  right: 40px;
+  font-size: 30px;
+}
+.container__header .fa-solid {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background-image: -o-linear-gradient(top left, #FF79DA, #9356DC);
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
+}
+.container__header .fa-solid:hover {
+  opacity: 1;
+}
 
 .menu__header {
   text-transform: uppercase;
@@ -338,6 +387,14 @@ H2 {
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1803921569);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1803921569);
   cursor: pointer;
+  -webkit-animation-name: itemsappear;
+          animation-name: itemsappear;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
 .menu__text, .menu__title, .menu__desc {
   white-space: nowrap; /*Met tout le texte sur une même ligne*/
