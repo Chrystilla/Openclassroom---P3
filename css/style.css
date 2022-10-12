@@ -336,7 +336,7 @@ H2 {
 .container__header .fa-heart {
   position: absolute;
   cursor: pointer;
-  right: 40px;
+  right: 30px;
   font-size: 30px;
 }
 .container__header .fa-solid {
@@ -356,6 +356,9 @@ H2 {
   opacity: 1;
 }
 
+.menu {
+  /*Apparition des plats l'un après l'autre*/
+}
 .menu__header {
   text-transform: uppercase;
   padding: 20px 0px 20px 0px;
@@ -376,69 +379,19 @@ H2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 60px;
   margin-bottom: 10px;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1803921569);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1803921569);
   cursor: pointer;
   -webkit-animation: itemsappear 1s both;
           animation: itemsappear 1s both;
-}
-.menu__item:hover .menu-check {
-  margin: 0;
-}
-.menu__item:hover .fa-check {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-  -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-.menu__check {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100%;
-  background-color: #99E2D0;
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1803921569);
-          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1803921569);
-  border-radius: 0px 10px 10px 0px;
-  margin-right: -43px;
-}
-.menu__check .fa-check {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  background-color: white;
-  color: #99E2D0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-  -webkit-transform: rotate(-360deg);
-      -ms-transform: rotate(-360deg);
-          transform: rotate(-360deg);
 }
 .menu .delay-1 {
   -webkit-animation-delay: 0s;
@@ -480,14 +433,85 @@ H2 {
   -webkit-animation-delay: 1.35s;
           animation-delay: 1.35s;
 }
+.menu__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 60px;
+  min-width: 65px;
+  background-color: #99E2D0;
+  border-radius: 0px 10px 10px 0px;
+  margin-right: -70px;
+  -webkit-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+}
+.menu__check .fa-check {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: rotate(-270deg);
+      -ms-transform: rotate(-270deg);
+          transform: rotate(-270deg);
+  -webkit-transition: -webkit-transform 500ms 100ms;
+  transition: -webkit-transform 500ms 100ms;
+  -o-transition: transform 500ms 100ms;
+  transition: transform 500ms 100ms;
+  transition: transform 500ms 100ms, -webkit-transform 500ms 100ms;
+}
+.menu__item {
+  /*Pour cacher le check qui dépasse*/
+  overflow: hidden;
+  /*Apparition encart vert*/
+  /*Rotation du check*/
+}
+.menu__item:hover .menu__check {
+  margin-right: 0;
+}
+.menu__item:hover .fa-check {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
 .menu__text, .menu__title, .menu__desc {
   white-space: nowrap; /*Met tout le texte sur une même ligne*/
   overflow: hidden; /*Cache le texte qui depasse*/
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis; /*Rajoute "..." */
 }
+.menu__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 0px 10px 10px;
+  width: 90%;
+}
 .menu__price {
-  margin-left: 10px;
+  margin: 0px 10px 10px 10px;
 }
 .menu__command {
   text-align: center;

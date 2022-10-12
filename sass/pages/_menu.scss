@@ -14,7 +14,7 @@
         .fa-heart {
         position: absolute;
         cursor: pointer;
-        right: 40px;
+        right: 30px;
         font-size: 30px;
         }
         .fa-solid  {
@@ -43,83 +43,80 @@
         background-color: white;
         border-radius: 10px;
         display: flex;
-        justify-content: space-between;
         align-items:flex-end;
-        padding: 10px;
+        justify-content: space-between;
+        min-height: 60px;
         margin-bottom: 10px;
         box-shadow: $card-shadow;
         cursor: pointer;
         animation: itemsappear 1s both;
-        &:hover .menu-check {
-            margin: 0;
-          }
-          &:hover .fa-check {
-            transform: scale(1);
-            transform: rotate(0deg);
-          }  
     }
+/*Apparition des plats l'un après l'autre*/
+.delay-1 {
+    animation-delay: 0s;
+}
+.delay-2 {
+    animation-delay: 0.15s;
+}  
+.delay-3 {
+    animation-delay: 0.3s;
+}
+.delay-4 {
+    animation-delay: 0.45s;
+}
+.delay-5 {
+    animation-delay: 0.6s;
+}
+.delay-6 {
+    animation-delay: 0.75s;
+}
+.delay-7 {
+    animation-delay: 0.9s;
+}
+.delay-8 {
+    animation-delay: 1.05s;
+}
+.delay-9 {
+    animation-delay: 1.2s;
+}
+.delay-10 {
+    animation-delay: 1.35s;
+}
 
     &__check {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100%;
+        min-height: 60px;
+        min-width: 65px;
         background-color: $tertiary-color;
-        box-shadow: $card-shadow;
         border-radius: 0px 10px 10px 0px;
-        margin-right: -43px;
+        margin-right: -70px;
+        transition: all 500ms;
     .fa-check {
         border-radius: 50%;
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         background-color: white ;
         color: $tertiary-color;
         display:flex;
         justify-content:center;
         align-items: center;
-        transform: scale(0);
-        transform: rotate(-360deg);
-
+        transform: rotate(-270deg);
+        transition: transform 500ms 100ms;
     }
 }
-    .delay-1 {
-        animation-delay: 0s;
-    }
-
-    .delay-2 {
-        animation-delay: 0.15s;
-    }  
-
-    .delay-3 {
-        animation-delay: 0.3s;
-    }
-
-    .delay-4 {
-        animation-delay: 0.45s;
-    }
-
-    .delay-5 {
-        animation-delay: 0.6s;
-    }
-
-    .delay-6 {
-        animation-delay: 0.75s;
-    }
-
-    .delay-7 {
-        animation-delay: 0.9s;
-    }
-
-    .delay-8 {
-        animation-delay: 1.05s;
-    }
-
-    .delay-9 {
-        animation-delay: 1.2s;
-    }
-
-    .delay-10 {
-        animation-delay: 1.35s;
+    &__item {
+        /*Pour cacher le check qui dépasse*/
+        overflow: hidden; 
+        /*Apparition encart vert*/
+        &:hover .menu__check {
+            margin-right: 0;
+          }
+        /*Rotation du check*/
+        &:hover .fa-check {
+            transform: rotate(0deg);
+          }  
     }
     
     &__text, &__title, &__desc {
@@ -127,8 +124,15 @@
         overflow: hidden; /*Cache le texte qui depasse*/
         text-overflow: ellipsis; /*Rajoute "..." */
     }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px 0px 10px 10px;
+        width: 90%;
+    }
     &__price {
-        margin-left: 10px;
+        margin: 0px 10px 10px 10px;
     }
 
 
