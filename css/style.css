@@ -387,14 +387,98 @@ H2 {
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1803921569);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1803921569);
   cursor: pointer;
-  -webkit-animation-name: itemsappear;
-          animation-name: itemsappear;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation: itemsappear 1s both;
+          animation: itemsappear 1s both;
+}
+.menu__item:hover .menu-check {
+  margin: 0;
+}
+.menu__item:hover .fa-check {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.menu__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  background-color: #99E2D0;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1803921569);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1803921569);
+  border-radius: 0px 10px 10px 0px;
+  margin-right: -43px;
+}
+.menu__check .fa-check {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform: rotate(-360deg);
+      -ms-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+.menu .delay-1 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.menu .delay-2 {
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+.menu .delay-3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.menu .delay-4 {
+  -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
+}
+.menu .delay-5 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.menu .delay-6 {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+.menu .delay-7 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+.menu .delay-8 {
+  -webkit-animation-delay: 1.05s;
+          animation-delay: 1.05s;
+}
+.menu .delay-9 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.menu .delay-10 {
+  -webkit-animation-delay: 1.35s;
+          animation-delay: 1.35s;
 }
 .menu__text, .menu__title, .menu__desc {
   white-space: nowrap; /*Met tout le texte sur une même ligne*/
