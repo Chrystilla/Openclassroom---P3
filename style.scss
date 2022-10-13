@@ -1,10 +1,14 @@
+
 @import "./sass/utils/variables";
 @import "./sass/utils/mixins";
 @import "./sass/utils/keyframes";
 @import "./sass/base/base";
-@import "./sass/layout/header";
 @import "./sass/components/button";
+@import "./sass/layout/header";
+@import "./sass/layout/footer";
+@import "./sass/pages/loader";
 @import "./sass/pages/home";
 @import "./sass/pages/menu";
-@import "./sass/layout/footer";
+
+
 

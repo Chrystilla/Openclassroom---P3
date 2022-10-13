@@ -7,3 +7,29 @@
         transform: scale(1);
       }
 }
+
+/*Apparition page loader*/
+@keyframes loader {
+  0% {
+      opacity: 0.9;
+  }
+  75% {
+      opacity: 0.9;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+/*Animation spinner*/
+@keyframes duts {
+  0% {
+      transform: translateY(-100%);
+  }
+  50% {
+      transform: translateY(0%);
+  }
+  100% {
+      transform: translateY(-100%);
+  }   
+}
