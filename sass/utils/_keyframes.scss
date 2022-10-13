@@ -12,12 +12,15 @@
 @keyframes loader {
   0% {
       opacity: 0.9;
+      z-index:1;
   }
-  75% {
+  95% {
       opacity: 0.9;
+      z-index:1;
   }
   100% {
       opacity: 0;
+      z-index: -1; /*Nécessaire pour que la page Home soit clickable*/
   }
 }
 

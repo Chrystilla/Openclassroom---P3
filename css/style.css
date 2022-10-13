@@ -25,23 +25,29 @@
 @-webkit-keyframes loader {
   0% {
     opacity: 0.9;
+    z-index: 1;
   }
-  75% {
+  95% {
     opacity: 0.9;
+    z-index: 1;
   }
   100% {
     opacity: 0;
+    z-index: -1; /*Nécessaire pour que la page Home soit clickable*/
   }
 }
 @keyframes loader {
   0% {
     opacity: 0.9;
+    z-index: 1;
   }
-  75% {
+  95% {
     opacity: 0.9;
+    z-index: 1;
   }
   100% {
     opacity: 0;
+    z-index: -1; /*Nécessaire pour que la page Home soit clickable*/
   }
 }
 /*Animation spinner*/
@@ -190,7 +196,15 @@ H2 {
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: hsl(0deg, 0%, 100%); /*100% à la luminosité pour donner une couleur de fond blanc*/
   -webkit-animation: loader 3s forwards;
           animation: loader 3s forwards; /*Ecrire forwards*/
@@ -198,8 +212,6 @@ H2 {
 
 .spinner {
   position: relative;
-  left: 45%;
-  top: 40%;
   width: 200px;
   height: 200px;
   display: -webkit-box;
@@ -211,6 +223,7 @@ H2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: hsl(0deg, 0%, 100%);
 }
 .spinner__dut {
   border-radius: 50%;
