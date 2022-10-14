@@ -8,9 +8,6 @@
     &__icon {
         margin-right: 15px;
     }
-    &__text {
-        font-weight: 500;
-    }
 }
 
 /*Mise en forme Section Explore*/
@@ -112,10 +109,11 @@
         }
     }
     
+    /*Mise en forme coeur & animation coeur*/
     .fa-heart {
         position: absolute;
-        cursor: pointer;
         right: 20px;
+        cursor: pointer;
         font-size: 30px;
 }
     .fa-solid  {

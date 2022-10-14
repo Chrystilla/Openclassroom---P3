@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*Animation bouton*/
+/*Animation coeur*/
 /*Apparition du menu*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 @-webkit-keyframes itemsappear {
@@ -113,10 +115,8 @@ H2 {
   padding: 20px 0px;
 }
 
+/*Mise en forme bouton de validation rose*/
 .btn--validation {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: -o-linear-gradient(top left, #FF79DA, #9356DC);
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -134,15 +134,12 @@ H2 {
           box-shadow: 0px 2px 30px rgb(179, 179, 179);
 }
 
+/*Mise en forme bouton de commande menu*/
 .command__btn {
   padding: 15px 50px 15px 50px;
 }
 
-.card__icon {
-  font-size: 200%;
-  padding-right: 10px;
-}
-
+/*Mise en forme header HOMEPAGE*/
 .header {
   padding: 20px;
   -webkit-box-shadow: 0px 0px 10px rgb(179, 179, 179);
@@ -154,12 +151,13 @@ H2 {
   margin: 0;
 }
 
+/*Mise en forme header PAGE MENU*/
 .header--withbackarrow__icon {
   font-size: 30px;
   color: black;
-  -webkit-transform: translatey(38px);
-      -ms-transform: translatey(38px);
-          transform: translatey(38px);
+  -webkit-transform: translateY(38px);
+      -ms-transform: translateY(38px);
+          transform: translateY(38px);
 }
 .header--withbackarrow__img {
   width: 100%;
@@ -180,7 +178,6 @@ H2 {
 }
 .footer a {
   color: white;
-  padding-right: 10px;
 }
 .footer__icon {
   color: white;
@@ -192,6 +189,7 @@ H2 {
   text-decoration: underline;
 }
 
+/*Mise en forme Page Loader*/
 .loader {
   width: 100%;
   height: 100%;
@@ -207,9 +205,10 @@ H2 {
           align-items: center;
   background-color: hsl(0deg, 0%, 100%); /*100% à la luminosité pour donner une couleur de fond blanc*/
   -webkit-animation: loader 3s forwards;
-          animation: loader 3s forwards; /*Ecrire forwards*/
+          animation: loader 3s forwards;
 }
 
+/*Mise en forme Spinner*/
 .spinner {
   position: relative;
   width: 200px;
@@ -224,6 +223,7 @@ H2 {
       -ms-flex-align: center;
           align-items: center;
   background-color: hsl(0deg, 0%, 100%);
+  /*Mise en forme Points du spinner*/
 }
 .spinner__dut {
   border-radius: 50%;
@@ -275,9 +275,6 @@ H2 {
 }
 .local__icon {
   margin-right: 15px;
-}
-.local__text {
-  font-weight: 500;
 }
 
 /*Mise en forme Section Explore*/
@@ -381,6 +378,7 @@ H2 {
   margin: 2%;
   position: relative;
   background-color: white;
+  /*Mise en forme coeur & animation coeur*/
 }
 .card__img {
   -o-object-fit: cover;
@@ -416,17 +414,17 @@ H2 {
 }
 .card .fa-heart {
   position: absolute;
-  cursor: pointer;
   right: 20px;
+  cursor: pointer;
   font-size: 30px;
 }
 .card .fa-solid {
+  background-clip: text; /*le background s'applique à l'image et plus au fond de l'image*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /*spécifie la couleur de remplissage des caractères du texte*/
   background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background-image: -o-linear-gradient(top left, #FF79DA, #9356DC);
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: 1;
   -webkit-transition-duration: 500ms;
@@ -463,6 +461,7 @@ H2 {
             justify-content: space-evenly;
   }
 }
+/*Mise en forme Section Menu & Titre*/
 .container-menu {
   background-color: #f8f7f7;
   border-radius: 30px 30px 0px 0px;
@@ -481,20 +480,21 @@ H2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /*Mise en forme coeur & animation coeur*/
 }
 .container__header .fa-heart {
   position: absolute;
-  cursor: pointer;
   right: 30px;
+  cursor: pointer;
   font-size: 30px;
 }
 .container__header .fa-solid {
+  background-clip: text; /*le background s'applique à l'image et plus au fond de l'image*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /*spécifie la couleur de remplissage des caractères du texte*/
   background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background-image: -o-linear-gradient(top left, #FF79DA, #9356DC);
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: 1;
   -webkit-transition-duration: 500ms;
@@ -505,13 +505,18 @@ H2 {
   opacity: 1;
 }
 
+/*Mise en forme Section détails Menu*/
 .menu {
+  /*Mise en forme des plats*/
   /*Apparition des plats l'un après l'autre*/
+  /*Mise en forme de l'icône de Check*/
+  /*Animation du Check*/
 }
 .menu__header {
   text-transform: uppercase;
   padding: 20px 0px 20px 0px;
   position: relative;
+  /*Surlignage vert*/
 }
 .menu__header ::after {
   content: "";
@@ -626,9 +631,8 @@ H2 {
   transition: transform 500ms 100ms, -webkit-transform 500ms 100ms;
 }
 .menu__item {
-  /*Pour cacher le check qui dépasse*/
-  overflow: hidden;
-  /*Apparition encart vert*/
+  overflow: hidden; /*Pour cacher le check qui dépasse sur la marge à droite*/
+  /*Animation apparition encart vert*/
   /*Rotation du check*/
 }
 .menu__item:hover .menu__check {
@@ -640,7 +644,7 @@ H2 {
           transform: rotate(0deg);
 }
 .menu__text, .menu__title, .menu__desc {
-  white-space: nowrap; /*Met tout le texte sur une même ligne*/
+  white-space: nowrap; /*pas de retour à la ligne du texte*/
   overflow: hidden; /*Cache le texte qui depasse*/
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis; /*Rajoute "..." */

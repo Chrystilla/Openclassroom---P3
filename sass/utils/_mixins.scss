@@ -1,14 +1,16 @@
+/*Animation bouton*/
 @mixin btn-hover {
     cursor: pointer;
     opacity: 0.8;
     box-shadow: $btn-shadowy;
 }
 
-@mixin anim-heart {
-        background-image: $btn-color;
+/*Animation coeur*/
+@mixin anim-heart {    
+        background-clip: text; /*le background s'applique à l'image et plus au fond de l'image*/
         -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent; /*spécifie la couleur de remplissage des caractères du texte*/
+        background-image: $btn-color; 
         opacity: 0;
         z-index: 1;
         transition-duration: 500ms;

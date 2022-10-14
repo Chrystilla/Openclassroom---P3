@@ -1,3 +1,4 @@
+/*Mise en forme Section Menu & Titre*/
 .container-menu {
     background-color: $secondary-background-color;
     border-radius: 30px 30px 0px 0px;
@@ -11,24 +12,26 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .fa-heart {
-        position: absolute;
-        cursor: pointer;
-        right: 30px;
-        font-size: 30px;
-        }
-        .fa-solid  {
-        @include anim-heart
-        }
+            /*Mise en forme coeur & animation coeur*/
+            .fa-heart {
+            position: absolute;
+            right: 30px;
+            cursor: pointer;
+            font-size: 30px;
+            }
+            .fa-solid  {
+            @include anim-heart
+            }
     }
 }
 
-
+/*Mise en forme Section détails Menu*/
 .menu {
     &__header {
         text-transform: uppercase;
         padding: 20px 0px 20px 0px;
         position: relative;
+        /*Surlignage vert*/
         ::after {
             content: "";
             width: 50px;
@@ -39,6 +42,7 @@
             bottom: 10px;
         }
     }
+    /*Mise en forme des plats*/
     &__item {
         background-color: white;
         border-radius: 10px;
@@ -82,7 +86,7 @@
 .delay-10 {
     animation-delay: 1.35s;
 }
-
+    /*Mise en forme de l'icône de Check*/
     &__check {
         display: flex;
         align-items: center;
@@ -93,23 +97,23 @@
         border-radius: 0px 10px 10px 0px;
         margin-right: -70px;
         transition: all 500ms;
-    .fa-check {
-        border-radius: 50%;
-        width: 25px;
-        height: 25px;
-        background-color: white ;
-        color: $tertiary-color;
-        display:flex;
-        justify-content:center;
-        align-items: center;
-        transform: rotate(-270deg);
-        transition: transform 500ms 100ms;
-    }
+        .fa-check {
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            background-color: white ;
+            color: $tertiary-color;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            transform: rotate(-270deg);
+            transition: transform 500ms 100ms;
+        }
 }
+    /*Animation du Check*/
     &__item {
-        /*Pour cacher le check qui dépasse*/
-        overflow: hidden; 
-        /*Apparition encart vert*/
+        overflow: hidden; /*Pour cacher le check qui dépasse sur la marge à droite*/
+        /*Animation apparition encart vert*/
         &:hover .menu__check {
             margin-right: 0;
           }
@@ -120,7 +124,7 @@
     }
     
     &__text, &__title, &__desc {
-        white-space: nowrap; /*Met tout le texte sur une même ligne*/
+        white-space: nowrap; /*pas de retour à la ligne du texte*/
         overflow: hidden; /*Cache le texte qui depasse*/
         text-overflow: ellipsis; /*Rajoute "..." */
     }
