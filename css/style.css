@@ -1,29 +1,8 @@
 @charset "UTF-8";
 /*Animation bouton*/
 /*Animation coeur*/
-/*Apparition du menu*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
-@-webkit-keyframes itemsappear {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@keyframes itemsappear {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
 /*Apparition page loader*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 @-webkit-keyframes loader {
   0% {
     opacity: 0.9;
@@ -79,6 +58,27 @@
   100% {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
+  }
+}
+/*Apparition du menu*/
+@-webkit-keyframes itemsappear {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes itemsappear {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 /*IMPORT POLICE Shrikhand & Roboto*/
@@ -187,6 +187,8 @@ H2 {
 }
 .footer__list:hover {
   text-decoration: underline;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
 }
 
 /*Mise en forme Page Loader*/
@@ -235,28 +237,28 @@ H2 {
 }
 .spinner__dut--1 {
   background-color: #9356DC;
-  -webkit-animation: duts 600ms 0ms infinite forwards;
-          animation: duts 600ms 0ms infinite forwards;
+  -webkit-animation: duts 600ms 0ms infinite;
+          animation: duts 600ms 0ms infinite;
 }
 .spinner__dut--2 {
   background-color: #FF79DA;
-  -webkit-animation: duts 600ms 50ms infinite forwards;
-          animation: duts 600ms 50ms infinite forwards;
+  -webkit-animation: duts 600ms 50ms infinite;
+          animation: duts 600ms 50ms infinite;
 }
 .spinner__dut--3 {
   background-color: #99E2D0;
-  -webkit-animation: duts 600ms 100ms infinite forwards;
-          animation: duts 600ms 100ms infinite forwards;
+  -webkit-animation: duts 600ms 100ms infinite;
+          animation: duts 600ms 100ms infinite;
 }
 .spinner__dut--4 {
   background-color: #FF79DA;
-  -webkit-animation: duts 600ms 150ms infinite forwards;
-          animation: duts 600ms 150ms infinite forwards;
+  -webkit-animation: duts 600ms 150ms infinite;
+          animation: duts 600ms 150ms infinite;
 }
 .spinner__dut--5 {
   background-color: #9356DC;
-  -webkit-animation: duts 600ms 200ms infinite forwards;
-          animation: duts 600ms 200ms infinite forwards;
+  -webkit-animation: duts 600ms 200ms infinite;
+          animation: duts 600ms 200ms infinite;
 }
 
 /*Mise en forme Section Localisation*/
@@ -548,44 +550,44 @@ H2 {
           animation: itemsappear 1s both;
 }
 .menu .delay-1 {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-.menu .delay-2 {
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
 }
-.menu .delay-3 {
+.menu .delay-2 {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
-.menu .delay-4 {
+.menu .delay-3 {
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
 }
-.menu .delay-5 {
+.menu .delay-4 {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
-.menu .delay-6 {
+.menu .delay-5 {
   -webkit-animation-delay: 0.75s;
           animation-delay: 0.75s;
 }
-.menu .delay-7 {
+.menu .delay-6 {
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
 }
-.menu .delay-8 {
+.menu .delay-7 {
   -webkit-animation-delay: 1.05s;
           animation-delay: 1.05s;
 }
-.menu .delay-9 {
+.menu .delay-8 {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
-.menu .delay-10 {
+.menu .delay-9 {
   -webkit-animation-delay: 1.35s;
           animation-delay: 1.35s;
+}
+.menu .delay-10 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 .menu__check {
   display: -webkit-box;

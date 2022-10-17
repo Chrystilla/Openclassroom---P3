@@ -1,13 +1,3 @@
-/*Apparition du menu*/
-@keyframes itemsappear {
-    0% {
-        transform: scale(0);
-      }
-    100% {
-        transform: scale(1);
-      }
-}
-
 /*Apparition page loader*/
 @keyframes loader {
   0% {
@@ -35,4 +25,14 @@
   100% {
       transform: translateY(-100%);
   }   
+}
+
+/*Apparition du menu*/
+@keyframes itemsappear {
+    0% {
+        transform: scale(0);
+      }
+    100% {
+        transform: scale(1);
+      }
 }
