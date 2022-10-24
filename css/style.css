@@ -153,11 +153,11 @@ H2 {
 
 /*Mise en forme header PAGE MENU*/
 .header--withbackarrow__icon {
-  font-size: 30px;
+  font-size: 200%;
   color: black;
-  -webkit-transform: translateY(38px);
-      -ms-transform: translateY(38px);
-          transform: translateY(38px);
+  -webkit-transform: translateY(125%);
+      -ms-transform: translateY(125%);
+          transform: translateY(125%);
 }
 .header--withbackarrow__img {
   width: 100%;
@@ -174,7 +174,7 @@ H2 {
 .footer__logo {
   color: white;
   padding: 15px 0px;
-  font-size: 20px;
+  font-size: 200%;
 }
 .footer a {
   color: white;
@@ -324,9 +324,9 @@ H2 {
   background-color: rgb(252, 241, 252);
 }
 .tuto__nbr {
-  -webkit-transform: translateX(-30px);
-      -ms-transform: translateX(-30px);
-          transform: translateX(-30px);
+  -webkit-transform: translateX(-140%);
+      -ms-transform: translateX(-140%);
+          transform: translateX(-140%);
   background-color: #9356DC;
   color: white;
   border-radius: 50%;
@@ -345,9 +345,9 @@ H2 {
 }
 .tuto__icon {
   color: grey;
-  -webkit-transform: translateX(-15px);
-      -ms-transform: translateX(-15px);
-          transform: translateX(-15px);
+  -webkit-transform: translateX(-90%);
+      -ms-transform: translateX(-90%);
+          transform: translateX(-90%);
 }
 .tuto__text {
   font-weight: 500;
@@ -391,8 +391,8 @@ H2 {
 }
 .card__badge {
   position: absolute;
-  right: 15px;
-  top: 10px;
+  right: 4%;
+  top: 4%;
   background-color: rgb(150, 193, 165);
   color: green;
   padding: 5px 10px;
@@ -416,9 +416,9 @@ H2 {
 }
 .card .fa-heart {
   position: absolute;
-  right: 20px;
+  right: 5%;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 200%;
 }
 .card .fa-solid {
   background-clip: text; /*le background s'applique à l'image et plus au fond de l'image*/
@@ -488,7 +488,7 @@ H2 {
   position: absolute;
   right: 30px;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 200%;
 }
 .container__header .fa-solid {
   background-clip: text; /*le background s'applique à l'image et plus au fond de l'image*/
@@ -526,8 +526,8 @@ H2 {
   height: 4px;
   background-color: #99e2d0;
   position: absolute;
-  left: 0px;
-  bottom: 10px;
+  left: 0%;
+  bottom: 18%;
 }
 .menu__item {
   background-color: white;
@@ -603,7 +603,7 @@ H2 {
   min-width: 65px;
   background-color: #99E2D0;
   border-radius: 0px 10px 10px 0px;
-  margin-right: -70px;
+  margin-right: -100%;
   -webkit-transition: all 500ms;
   -o-transition: all 500ms;
   transition: all 500ms;
@@ -638,7 +638,7 @@ H2 {
   /*Rotation du check*/
 }
 .menu__item:hover .menu__check {
-  margin-right: 0;
+  margin-right: 0%;
 }
 .menu__item:hover .fa-check {
   -webkit-transform: rotate(0deg);

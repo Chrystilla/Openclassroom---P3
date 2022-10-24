@@ -17,7 +17,7 @@
             position: absolute;
             right: 30px;
             cursor: pointer;
-            font-size: 30px;
+            font-size: 200%;
             }
             .fa-solid  {
             @include anim-heart
@@ -38,8 +38,8 @@
             height: 4px;
             background-color: #99e2d0;
             position: absolute;
-            left: 0px;
-            bottom: 10px;
+            left: 0%;
+            bottom: 18%;
         }
     }
     /*Mise en forme des plats*/
@@ -72,7 +72,7 @@
         min-width: 65px;
         background-color: $tertiary-color;
         border-radius: 0px 10px 10px 0px;
-        margin-right: -70px;
+        margin-right: -100%;
         transition: all 500ms;
         .fa-check {
             border-radius: 50%;
@@ -92,7 +92,7 @@
         overflow: hidden; /*Pour cacher le check qui dépasse sur la marge à droite*/
         /*Animation apparition encart vert*/
         &:hover .menu__check {
-            margin-right: 0;
+            margin-right: 0%;
           }
         /*Rotation du check*/
         &:hover .fa-check {
